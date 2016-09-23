@@ -5,11 +5,13 @@
   "author": "Nickolay Rusev <nickolay.rusev@gmail.com>",
   "files": [
     "livescore.js",
+    "liveupdate.js",
     "lib",
     "bin"
   ],
   "bin": {
-    "livescore": "./bin/livescore"
+    "livescore": "./bin/livescore",
+    "liveupdate": "./bin/liveupdate"
   },
   "preferGlobal": "true",
   "engines": {
