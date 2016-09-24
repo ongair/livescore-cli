@@ -52,9 +52,7 @@ function liveUpdate() {
             .then(function(newer) {
               var old = cache[newer.matchId][cache[newer.matchId].length-1];
 
-              tubet.resolveDifferences(old, newer, game.status);            
-              console.log(old.progress,newer.progress);
-
+              tubet.resolveDifferences(old, newer, game.status);
               cache[newer.matchId].push(newer);
             });
         }
