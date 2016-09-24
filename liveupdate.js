@@ -62,5 +62,7 @@ function liveUpdate() {
 
 liveUpdate();
 setInterval(function() {
+  console.log('-----------------------------------------------------------------');
   liveUpdate();
+
 }, program.refresh ? program.refresh * 1000 : 60000);
