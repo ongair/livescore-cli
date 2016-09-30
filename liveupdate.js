@@ -35,7 +35,7 @@ function liveUpdate() {
               _key = match.matchId;
               cache[_key] = [match];
               cache['timestamp'] = new Date();
-              console.log(_key, status, match.title, match.score, match.progress);
+              console.log(moment().format('LTS'), _key, status, match.title, match.score, match.progress);
               // check to see if the status is different...
               if (status == "pending" && match.progress != "NS") {
                 // should update that the match has kicked off
